@@ -9,14 +9,14 @@
         }
         .whole-container {
             height: 100vh;
-            background-color: rgb(179, 172, 172);
+            background-color: rgba(198,196,196,255);
             width: 100%;
             display: flex;
             flex-direction: column;
         }
         .whole-container .top-content {
             height: 12%;
-            background-color: gray;
+            background-color: rgba(98,106,112,255);
             display: flex;
             flex-direction: row;
         }
@@ -29,9 +29,36 @@
         .whole-container .top-content .navigationside {
             height: 80%;
             width: 50%;
-            background-color: aqua;
+            /*background-color: aqua;*/
             margin: 10px;
         }
+        .navigationside #navigationtabs {
+            margin-top: 0;
+            padding-left: 0;
+            height: 100%;
+            list-style: none; 
+            display: flex; 
+            flex-direction: row;
+        }
+
+        .navigationside #navigationtabs li 
+        {
+            height: 100%;
+            width: 50%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; 
+            color: white; 
+        }
+
+        .navigationside #navigationtabs li:hover 
+        {
+            background-color: rgb(209, 209, 209)
+        }
+
         .whole-container .middle-content {
             height: 95%;
             /*background-color: white;*/
@@ -46,7 +73,7 @@
         .whole-container .middle-content .leftside-middle-content .registrationform-box {
             height: 98%;
             width: 90%;
-            background-color: wheat;
+            background-color: white;
             margin-left: 5%;
             margin-right: 5%;
             margin-top: 1%;
@@ -60,7 +87,7 @@
         .whole-container .middle-content .rightside-middle-content .picture-box {
             height: 90%;
             width: 90%;
-            background-color: wheat;
+            /*background-color: wheat;*/
             margin-left: 5%;
             margin-right: 5%;
             margin-top: 5%;
@@ -79,7 +106,13 @@
             </div>
 
             <div class="navigationside">
-                NAVIGATION TABS
+                <ul id="navigationtabs">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Employers</li>
+                    <li>Career Advice</li>
+                    <li>Register</li>
+                </ul>
             </div>
 
         </div>
