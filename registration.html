@@ -87,11 +87,6 @@
             background-color: beige;
             height: 85%;
         }
-        p#registerform-text {
-            margin: 0;
-            font-size: small;
-            font-weight: lighter;
-        }
         .whole-container .middle-content .rightside-middle-content {
             height: 100%;
             width: 50%;
@@ -140,10 +135,12 @@
                     <div class="registrationform">
                         <form  action="index.html">
                             <label for="email">Email Address:</label><br>
-                            <p id="registerform-text">Verification will be required to post a job listing</p>
+                            Verification will be required to post a job listing<br>
                             <input type="text" id="email" name="email" placeholder="emailaddress@gmail.com" required><br>
                             <label for="password">Password:</label><br>
                             <input type="text" id="password" name="password" placeholder="*********" required><br>
+                            <input type="checkbox" id="policy" name="policy" required>Verification will 
+                            be required to post a job listing<br>
                             <input type="submit" value="NEXT">
                         </form> 
                     </div>
