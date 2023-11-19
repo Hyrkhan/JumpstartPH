@@ -73,13 +73,21 @@
             /*background-color: rgba(255, 0, 0, 0.555);*/
         }
         .whole-container .middle-content .leftside-middle-content .registrationform-box {
-            height: 98%;
+            height: 96%;
             width: 90%;
             background-color: white;
             margin-left: 5%;
             margin-right: 5%;
-            margin-top: 1%;
-            margin-bottom: 1%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .register-text {
+            background-color: aqua;
+            height: 15%;
+        }
+        .registrationform {
+            background-color: beige;
+            height: 85%;
         }
         .whole-container .middle-content .rightside-middle-content {
             height: 100%;
@@ -123,7 +131,18 @@
 
             <div class="leftside-middle-content">
                 <div class="registrationform-box">
-                    REGISTRATION FORM
+                    <div class="register-text">
+                        REGISTER AS AN EMPLOYER
+                    </div>
+                    <div class="registrationform">
+                        <form  action="index.html">
+                            <label for="email">Email Address:</label>
+                            <input type="text" id="email" name="email" placeholder="emailaddress@gmail.com" required><br>
+                            <label for="password">Password:</label>
+                            <input type="text" id="password" name="password" placeholder="*********" required><br>
+                            <input type="submit" value="NEXT">
+                        </form> 
+                    </div>
                 </div>
             </div>
 
