@@ -7,25 +7,50 @@
         body {
             margin: 0;
         }
-
         .whole-container {
             height: 100vh;
             background-color: rgb(179, 172, 172);
             width: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .whole-container .top-content {
-            height: 10%;
+            height: 12%;
             background-color: gray;
+            display: flex;
+            flex-direction: row;
+        }
+        .whole-container .top-content .logoside {
+            height: 80%;
+            width: 50%;
+            background-color: antiquewhite;
+            margin: 10px;
+        }
+        .whole-container .top-content .navigationside {
+            height: 80%;
+            width: 50%;
+            background-color: aqua;
+            margin: 10px;
         }
         .whole-container .middle-content {
-            height: 90%;
+            height: 95%;
             background-color: white;
             display: flex;
+            flex-direction: row;
         }
         .whole-container .middle-content .leftside-middle-content {
             height: 100%;
             width: 50%;
             background-color: rgba(255, 0, 0, 0.555);
+        }
+        .whole-container .middle-content .leftside-middle-content .registrationform-box {
+            height: 98%;
+            width: 90%;
+            background-color: wheat;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 1%;
+            margin-bottom: 1%;
         }
         .whole-container .middle-content .rightside-middle-content {
             height: 100%;
@@ -39,11 +64,23 @@
     <div class="whole-container">
 
         <div class="top-content">
+
+            <div class="logoside">
+                ss
+            </div>
+
+            <div class="navigationside">
+                ss
+            </div>
+
         </div>
 
         <div class="middle-content">
 
             <div class="leftside-middle-content">
+                <div class="registrationform-box">
+
+                </div>
             </div>
 
             <div class="rightside-middle-content">
