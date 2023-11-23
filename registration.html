@@ -160,9 +160,15 @@
             flex-direction: column;
             align-items: left;
         }
+        span#formremindertext {
+            color: gray;
+            font-weight: lighter;
+            font-size: x-large;
+        }
         .registrationform form input[type="text"] {
             height: 30vh;
             width: 50vh;
+            border: 2px solid black;
         }
         .registrationform form input[type="submit"] {
             background-color: rgba(228,77,38,255);
@@ -238,11 +244,14 @@
                     <div class="registrationform">
                         <form  action="index.html">
                             <label for="email">Email Address:</label><br>
-                            Verification will be required to post a job listing<br>
+                            <span id="formremindertext">Verification will be required to post a job listing</span><br>
                             <input type="text" id="email" name="email" placeholder="emailaddress@gmail.com" required><br>
                             <label for="password">Password:</label><br>
                             <input type="text" id="password" name="password" placeholder="*********" required><br>
-                            <input type="checkbox" id="policy" name="policy" required>something something accept privacy policy<br>
+                            <div class="checkbox-policy">
+                                <input type="checkbox" id="policy" name="policy" required>
+                                <span id="formremindertext">something something accept privacy policy</span><br>
+                            </div>
                             <input type="submit" value="NEXT">
                         </form> 
                     </div>
