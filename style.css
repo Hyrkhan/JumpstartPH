@@ -188,6 +188,9 @@ span#formremindertext2 {
     color: white;
     font-size: xx-large;
 }
+.registrationform form input[type="submit"]:hover {
+    background-color: rgba(228,150,34,255);
+}
 .whole-container .middle-content .registerandpic-middle-content .picture-box {
     height: 720px;
     width: 700px;
