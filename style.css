@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+}
+.whole-container {
+    height: 100vh;
+    background-color: rgba(198,196,196,255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.whole-container .top-content {
+    height: 12%;
+    padding-left: 2%;
+    background-color: rgba(98,106,112,255);
+    display: flex;
+    flex-direction: row;
+}
+.whole-container .top-content .logoside {
+    height: 80%;
+    width: 50vh;
+    /*background-color: wheat;*/
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    height: 100%;
+    width: 50vh;
+    background-image: url(JumpStartLogo.png);
+    background-size: 100% 100%;
+}
+.whole-container .top-content .navigationside {
+    height: 100%;
+    width: 150vh;
+    /*background-color: aqua;*/
+    padding-left: 25px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: right;
+}
+.navigationside ul#navigationtabs {
+    margin: 0;
+    padding-left: 0;
+    height: 100%;
+    width: 115vh;
+    list-style: none; 
+    display: flex; 
+    flex-direction: row;
+    /*background-color: white;*/
+}
+.navigationside #navigationtabs li#navtabs
+{
+    height: 100%;
+    width: 50%;
+    /*margin-left: 2%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*cursor: pointer;*/
+    color: white;
+    font-size: 25px;
+    /*background-color: brown;*/
+}
+.navigationside #navigationtabs li#navtabspace {
+    height: 100%;
+    width: 5px;
+    background-color: white;
+}
+/*
+.navigationside #navigationtabs li:hover 
+{
+    background-color: rgb(209, 209, 209)
+}*/
+.button {
+    background-color: rgba(228,77,38,255);
+    border: none;
+    color: white;
+    /*padding: 5px 15px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    /*border-radius: 16px;*/
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+}
+.button:hover {
+    background-color: rgba(228,150,34,255);
+}
+.whole-container .middle-content {
+    height: 95%;
+    /*background-color: white;*/
+    display: flex;
+    flex-direction: row;
+}
+.whole-container .middle-content .registerandpic-middle-content {
+    height: 100%;
+    width: 300vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    /*background-color: rgba(255, 0, 0, 0.555);*/
+}
+.whole-container .middle-content .registerandpic-middle-content .registrationform-box {
+    height: 600px;
+    width: 76.7vh;;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 2.5%;
+    margin-top: 11vh;
+    box-shadow: 0px 0px 30px 1px black;
+}
+.formbox-topdesign {
+    height: 12vh;
+    width: 76.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(formdesign.png);
+    background-size: 100%, 100%;
+}
+.register-text {
+    /*background-color: aqua;*/
+    height: 15%;
+    color: white;
+    font-size: xxx-large;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8vh;
+}
+span#register-textCapital {
+    color: rgba(228,77,38,255);
+}
+.registrationform {
+    /*background-color: beige;*/
+    height: 85%;
+    width: 76.7vh;
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registrationform form {
+    /*background-color: aquamarine;*/
+    height: 90%;
+    width: 95%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+span#formremindertext {
+    color: gray;
+    font-weight: lighter;
+    font-size: x-large;
+}
+.registrationform form input[type="text"] {
+    height: 5vh;
+    width: 50vh;
+    border: 2px solid black;
+}
+.checkbox-policy {
+    margin-top: 15px;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+span#formremindertext2 {
+    margin-left: 15px;
+    color: gray;
+    font-weight: lighter;
+    font-size: x-large;
+}
+.registrationform form input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+}
+.registrationform form input[type="submit"] {
+    background-color: rgba(228,77,38,255);
+    height: 80px;
+    margin: 5%;
+    color: white;
+    font-size: xx-large;
+}
+.whole-container .middle-content .registerandpic-middle-content .picture-box {
+    height: 720px;
+    width: 700px;
+    /*background-color: wheat;*/
+    margin-left: 2.5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+} 
+.picture {
+    height: 100%;
+    width: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(employerReg.png);
+    background-size: 90% 90%;
+}
