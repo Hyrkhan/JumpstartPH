@@ -110,16 +110,16 @@
             /*background-color: rgba(255, 0, 0, 0.555);*/
         }
         .whole-container .middle-content .registerandpic-middle-content .registrationform-box {
-            height: 720px;
+            height: 600px;
             width: 76.7vh;;
             background-color: white;
             margin-left: 100px;
             margin-right: 2.5%;
-            margin-top: 2.5%;
+            margin-top: 11vh;
             box-shadow: 0px 0px 30px 1px black;
         }
         .formbox-topdesign {
-            height: 15%;
+            height: 12vh;
             width: 76.7vh;
             display: flex;
             justify-content: center;
@@ -166,9 +166,26 @@
             font-size: x-large;
         }
         .registrationform form input[type="text"] {
-            height: 30vh;
+            height: 5vh;
             width: 50vh;
             border: 2px solid black;
+        }
+        .checkbox-policy {
+            margin-top: 15px;
+            /*background-color: aqua;*/
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        span#formremindertext2 {
+            margin-left: 15px;
+            color: gray;
+            font-weight: lighter;
+            font-size: x-large;
+        }
+        .registrationform form input[type="checkbox"] {
+            height: 30px;
+            width: 30px;
         }
         .registrationform form input[type="submit"] {
             background-color: rgba(228,77,38,255);
@@ -243,14 +260,14 @@
 
                     <div class="registrationform">
                         <form  action="index.html">
-                            <label for="email">Email Address:</label><br>
-                            <span id="formremindertext">Verification will be required to post a job listing</span><br>
+                            <label for="email">Email Address:</label>
+                            <span id="formremindertext">Verification will be required to post a job listing</span>
                             <input type="text" id="email" name="email" placeholder="emailaddress@gmail.com" required><br>
-                            <label for="password">Password:</label><br>
-                            <input type="text" id="password" name="password" placeholder="*********" required><br>
+                            <label for="password">Password:</label>
+                            <input type="text" id="password" name="password" placeholder="*********" required>
                             <div class="checkbox-policy">
                                 <input type="checkbox" id="policy" name="policy" required>
-                                <span id="formremindertext">something something accept privacy policy</span><br>
+                                <span id="formremindertext2">something something accept privacy policy</span><br>
                             </div>
                             <input type="submit" value="NEXT">
                         </form> 
