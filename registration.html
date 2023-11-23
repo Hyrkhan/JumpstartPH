@@ -17,7 +17,6 @@
         .whole-container .top-content {
             height: 12%;
             padding-left: 2%;
-            padding-right: 2%;
             background-color: rgba(98,106,112,255);
             display: flex;
             flex-direction: row;
@@ -38,12 +37,12 @@
             background-size: 100% 100%;
         }
         .whole-container .top-content .navigationside {
-            height: 80%;
+            height: 100%;
             width: 140vh;
             /*background-color: aqua;*/
-            margin: 10px;
+            margin-left: 10px;
             display: flex;
-            justify-content: center;
+            justify-content: right;
         }
         .navigationside ul#navigationtabs {
             margin: 0;
@@ -53,12 +52,13 @@
             list-style: none; 
             display: flex; 
             flex-direction: row;
+            /*background-color: white;*/
         }
-        .navigationside #navigationtabs li 
+        .navigationside #navigationtabs li#navtabs
         {
             height: 100%;
             width: 50%;
-            margin-left: 2%;
+            /*margin-left: 2%;*/
             display: flex;
             align-items: center;
             justify-content: center;
@@ -66,6 +66,10 @@
             color: white;
             font-size: 25px;
             /*background-color: brown;*/
+        }
+        .navigationside #navigationtabs li#navtabspace {
+            height: 100%;
+            background-color: black;
         }
         /*
         .navigationside #navigationtabs li:hover 
@@ -192,16 +196,22 @@
 
             <div class="navigationside">
                 <ul id="navigationtabs">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Employers</li>
-                    <li>Career Advice</li>
-                    <li>
+                    <li id="navtabspace">.</li>
+                    <li id="navtabs">Home</li>
+                    <li id="navtabspace">.</li>
+                    <li id="navtabs">About</li>
+                    <li id="navtabspace">.</li>
+                    <li id="navtabs">Employers</li>
+                    <li id="navtabspace">.</li>
+                    <li id="navtabs">Career Advice</li>
+                    <li id="navtabspace">.</li>
+                    <li id="navtabs">
                         <button class="button">
                             Register
                         </button>
                     </li>
-                    <li>Login</li>
+                    <li id="navtabspace">.</li>
+                    <li id="navtabs">Login</li>
                 </ul>
             </div>
 
