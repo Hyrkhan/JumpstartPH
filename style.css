@@ -231,9 +231,11 @@ span#formremindertext2 {
 }
 span#employerRegLink {
     padding-left: 5px;
+    cursor: pointer;
+}
+span#employerRegLink:hover {
     text-decoration: underline;
     color: rgba(228,77,38,255);
-    cursor: pointer;
 }
 a#employerReg {
     text-decoration: none;
