@@ -4,6 +4,26 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .contentbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .homepage_box {
+            height: 90vh;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url(homepageBG.PNG);
+        }
+        .aboutpage_box {
+            height: 100vh;
+            width: 100%;
+            background-color: blanchedalmond;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +41,7 @@
                 <ul id="navigationtabs">
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button">
+                        <button class="currenttab">
                             Home
                         </button>
                     </li>
@@ -45,7 +65,7 @@
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="currenttab">
+                        <button class="button">
                             Register
                         </button>
                     </li>
@@ -60,10 +80,12 @@
             </div>
 
         </div>
-
-        <div class="middle-content">
+        <div class="contentbox">
+            <div class="homepage_box">
+            </div>
+            <div class="aboutpage_box">
+            </div>
         </div>
-
     </div>
 </body>
 
