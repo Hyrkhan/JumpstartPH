@@ -85,16 +85,20 @@ body {
 }
 .button {
     background-color: rgba(98,106,112,255);
+    /*background-color: aqua;*/
     border: none;
     color: white;
     text-align: center;
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width: 175px;
     font-size: x-large;
     cursor: pointer;
 }
 .button:hover {
     text-decoration: underline;
+}
+a#page_link {
+    background-color: brown;
 }
 .whole-container .middle-content {
     height: 95%;
