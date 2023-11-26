@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.whole-container .top-content {
+.top-content {
     height: 12%;
     background-color: rgba(98,106,112,255);
     display: flex;
@@ -16,7 +16,7 @@ body {
     box-shadow: 10px 20px 30px -20px black;
     width: 100%;
 }
-.whole-container .top-content .logoside {
+.logoside {
     height: 80%;
     padding-left: 2%;
     width: 50vh;
@@ -32,7 +32,7 @@ body {
     background-image: url(JumpStartLogo.png);
     background-size: 100% 100%;
 }
-.whole-container .top-content .navigationside {
+.navigationside {
     height: 100%;
     width: 150vh;
     /*background-color: aqua;*/
@@ -96,9 +96,6 @@ body {
 }
 .button:hover {
     text-decoration: underline;
-}
-a#page_link {
-    background-color: brown;
 }
 .whole-container .middle-content {
     height: 95%;

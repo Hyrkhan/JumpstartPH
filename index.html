@@ -5,13 +5,97 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <style>
+        .top-content-bar {
+            height: 12%;
+            background-color: rgba(98,106,112,255, .15); 
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: row;
+            box-shadow: 10px 20px 30px -20px black;
+            width: 100%;
+            position: absolute;
+        }
+        .logoside-index {
+            height: 80%;
+            padding-left: 2%;
+            width: 50vh;
+            /*background-color: wheat;*/
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            height: 100%;
+            width: 50vh;
+            background-image: url(JumpStartLogo.png);
+            background-size: 100% 100%;
+        }
+        .navigationside-index {
+            height: 100%;
+            width: 150vh;
+            /*background-color: aqua;*/
+            padding-left: 25px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: right;
+        }
+        .navigationside-index ul#navigationtabs {
+            margin: 0;
+            padding-left: 0;
+            height: 100%;
+            width: 115vh;
+            list-style: none; 
+            display: flex; 
+            flex-direction: row;
+            /*background-color: white;*/
+        }
+        .navigationside-index #navigationtabs li#navtabs
+        {
+            height: 100%;
+            width: 50%;
+            /*margin-left: 2%;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*cursor: pointer;*/
+            color: white;
+            font-size: 25px;
+            /*background-color: brown;*/
+        }
+        .currenttab-index {
+            background-color: rgba(228,77,38,255);
+            border: none;
+            color: white;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            font-size: x-large;
+        }
+        .button-index {
+            background-color: rgba(98,106,112,255);
+            /*background-color: aqua;*/
+            border: none;
+            color: white;
+            text-align: center;
+            height: 110px;
+            width: 175px;
+            font-size: x-large;
+            cursor: pointer;
+        }
+        .navigationside-index #navigationtabs li#navtabspace {
+            height: 100%;
+            width: 5px;
+            background-color: white;
+        }
+        
         .contentbox {
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
         .homepage_box {
-            height: 90vh;
+            height: 100vh;
             width: 100%;
         }
         .homepage_box .homepageBGpict {
@@ -31,49 +115,49 @@
 <body>
     <div class="whole-container">
 
-        <div class="top-content">
+        <div class="top-content-bar">
 
-            <div class="logoside">
+            <div class="logoside-index">
                 <div class="logo">
                 </div>
             </div>
 
-            <div class="navigationside">
+            <div class="navigationside-index">
 
                 <ul id="navigationtabs">
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="currenttab">
+                        <button class="currenttab-index">
                             Home
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button">
+                        <button class="button-index">
                             About
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button">
+                        <button class="button-index">
                             Employers
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button">
+                        <button class="button-index">
                             Career Advice
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button">
+                        <button class="button-index">
                             Register
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button">
+                        <button class="button-index">
                             Login
                         </button>
                     </li>
