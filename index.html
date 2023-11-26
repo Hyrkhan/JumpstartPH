@@ -13,7 +13,8 @@
             flex-direction: row;
             box-shadow: 10px 20px 30px -20px black;
             width: 100%;
-            position: absolute;
+            position: fixed;
+            z-index: 1000;
         }
         .logoside-index {
             height: 80%;
@@ -102,13 +103,35 @@
         .homepage_box .homepageBGpict {
             height: 100%;
             width: 100%;
-            background-size: 100% 100%;
+            background-size: cover;
             background-image: url(homepageBG.PNG);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .welcomingP {
+            color: white;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        p#welcomeParagraph {
+            margin-top: 300px;
+            font-size: xxx-large;
         }
         .aboutpage_box {
             height: 100vh;
             width: 100%;
-            background-color: blanchedalmond;
+            background-color: rgba(98,106,112,255);
         }
     </style>
 </head>
@@ -117,7 +140,6 @@
     <div class="whole-container">
 
         <div class="top-content-bar">
-
             <div class="logoside-index">
                 <div class="logo">
                 </div>
@@ -170,7 +192,17 @@
         <div class="contentbox">
             <div class="homepage_box">
                 <div class="homepageBGpict">
-
+                    <div class="overlay">
+                        <div class="welcomingP">
+                            <p id="welcomeParagraph">
+                                Jumpstart your career with <span id="OrangeText">us</span>
+                                and <span id="OrangeText">explore</span><br>
+                                <span id="OrangeText">endless opportunities</span>.
+                                Your next big leap starts <span id="OrangeText">here</span>.
+                            </p>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="aboutpage_box">
