@@ -78,7 +78,7 @@
 
                     <div class="registrationform">
 
-                        <form  action="EmployeeRegistration.html">
+                        <form  action="EmployeeRegistration.html" onsubmit="return validateForm2(event)">
                             <label for="business">Business Name:</label>
                             <span id="formremindertext">For security purposes, please enter business name</span>
                             <input type="text" id="business" name="business" placeholder="Alorica"><br>
@@ -93,6 +93,11 @@
 
                     </div>
 
+                </div>
+
+                <div id="validationModal" class="modal">
+                    <span id="closeModal" onclick="closeModal()">&times;</span>
+                    <div id="modalContent"></div>
                 </div>
 
                 <div class="picture-box">
