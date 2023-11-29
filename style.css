@@ -126,8 +126,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(formdesign.png);
-    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-image: url(formdes.png);
+    background-size: 90%, 100%;
+    background-color: rgba(53,66,74,255)
 }
 .register-text {
     /*background-color: aqua;*/
@@ -147,6 +149,7 @@ span#OrangeText {
     /*background-color: beige;*/
     height: 85%;
     width: 76.7vh;
+    margin-top: 2px;
     font-size: xx-large;
     font-weight: bold;
     display: flex;
@@ -170,6 +173,7 @@ span#formremindertext {
 .registrationform form input[type="text"] {
     height: 5vh;
     width: 50vh;
+    margin-top: 20px;
     border: 2px solid black;
 }
 .checkbox-policy {
