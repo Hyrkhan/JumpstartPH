@@ -2,7 +2,6 @@
 function validateForm(event) {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
-    var phoneNumber = document.getElementById('phonenumber').value;
     
     // validate email if correct
     if (!isValidEmail(email)) {

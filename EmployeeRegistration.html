@@ -78,12 +78,13 @@
 
                     <div class="registrationform">
 
-                        <form  action="EmployerRegistration2.html">
+                        <form  action="EmployerRegistration2.html" onsubmit="return validateForm(event)">
                             <label for="email">Email Address:</label>
                             <span id="formremindertext">For signing in and for being contacted by employers</span>
                             <input type="text" id="email" name="email" placeholder="emailaddress@gmail.com"><br>
                             <label for="password">Password:</label>
-                            <input type="text" id="password" name="password" placeholder="*********">
+                            <span id="formremindertext">Password must be 8 characters or more</span>
+                            <input type="password" id="password" name="password" placeholder="*********">
                             <div class="checkbox-policy">
                                 <input type="checkbox" id="policy" name="policy" required>
                                 <span id="formremindertext2">something something accept privacy policy</span><br>
@@ -101,6 +102,11 @@
 
                     </div>
 
+                </div>
+
+                <div id="validationModal" class="modal">
+                    <span id="closeModal" onclick="closeModal()">&times;</span>
+                    <div id="modalContent"></div>
                 </div>
 
                 <div class="picture-box">
