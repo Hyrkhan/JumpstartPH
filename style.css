@@ -268,10 +268,14 @@ a#employerReg {
 #modalDesignPicture {
     height: 100%;
     width: 430px;
-    background-image: url(formdes.png);
+    background-image: url(ErrorBoxDesign.png);
     background-size: 120%, 100%;
     background-repeat: no-repeat;
     display: flex;
+}
+
+span#RedText {
+    color: rgba(255,0,0,255);
 }
 
 .errorTexttitle {
