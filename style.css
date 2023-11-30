@@ -253,31 +253,31 @@ a#employerReg {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    box-shadow: 10px 20px 30px -20px black;
+    box-shadow: 20px 20px 30px -10px black;
     z-index: 1000;
     height: 250px;
-    width: 400px;
+    width: 430px;
 }
 
 #modalDesign {
     height: 34%;
     width: 100%;
-    background-color: bisque;
+    /*background-color: bisque;*/
 }
 
 #modalDesignPicture {
     height: 100%;
+    width: 430px;
     background-image: url(formdes.png);
     background-size: 120%, 100%;
     background-repeat: no-repeat;
     display: flex;
 }
 
-.errorText {
-    margin-left: 130px;
-    margin-right: 15px;
+.errorTexttitle {
+    margin-left: 160px;
     height: 100%;
-    width: 60%;
+    width: 55%;
     /*background-color: azure;*/
     display: flex;
     align-items: center;
@@ -291,12 +291,17 @@ a#employerReg {
     font-weight: bolder;
     height: 66%;
     width: 100%;
-    background-color: aqua;
-    
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #closeModal {
-    padding-right: 5px;
+    padding-left: 20px;
     cursor: pointer;
     float: right;
     color: white;

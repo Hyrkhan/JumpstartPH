@@ -25,7 +25,7 @@ function validateForm2(event) {
     var phoneNumber = document.getElementById('phonenumber').value;
 
     if (!isValidPhoneNumber(phoneNumber)) {
-        displayModal('Phone number must be 11 digits long and in "09XX-XXX-XXXX" format.');
+        displayModal('Phone number must be 11 digits and in "09XX-XXX-XXXX" format.');
         event.preventDefault(); // prevent form submission
         return false;
     }
