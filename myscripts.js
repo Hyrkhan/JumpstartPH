@@ -56,5 +56,5 @@ function isValidEmail(email) {
 // function that validates the phone number entered
 function isValidPhoneNumber(phoneNumber) {
     // validate phone number format using RegEx
-    return /09\d{2}-\d{3}-\d{4}/.test(phoneNumber);
+    return /^09\d{2}-\d{3}-\d{4}$/.test(phoneNumber);
 }
