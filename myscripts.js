@@ -22,7 +22,14 @@ function validateForm(event) {
 
 // function that checks the phone number and validates it
 function validateForm2(event) {
+    var businessName = document.getElementById('business').value;
     var phoneNumber = document.getElementById('phonenumber').value;
+
+    if(!isValidBusinessName(businessName)) {
+        displayModal('Please enter letters only.');
+        event.preventDefault(); // prevent form submission
+        return false;
+    }
 
     if (!isValidPhoneNumber(phoneNumber)) {
         displayModal('Phone number must be 11 digits long and in "09XX-XXX-XXXX" format.');
@@ -57,4 +64,8 @@ function isValidEmail(email) {
 function isValidPhoneNumber(phoneNumber) {
     // validate phone number using RegEx
     return /09\d{2}-\d{3}-\d{4}/.test(phoneNumber);
+}
+
+function isValidBusinessName(businessName) {
+    return /a-zA-Z/.test(businessName);
 }
