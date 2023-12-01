@@ -10,7 +10,7 @@ body {
 }
 .top-content {
     height: 12%;
-    background-color: rgba(116,125,130,255);
+    background-color: rgba(53,66,74,255);
     display: flex;
     flex-direction: row;
     box-shadow: 10px 20px 30px -20px black;
@@ -84,7 +84,7 @@ body {
     font-size: x-large;
 }
 .button {
-    background-color: rgba(116,125,130,255);
+    background-color: rgba(53,66,74,255);
     /*background-color: aqua;*/
     border: none;
     color: white;
@@ -129,7 +129,7 @@ body {
     background-repeat: no-repeat;
     background-image: url(formdes.png);
     background-size: 90%, 100%;
-    background-color: rgba(53,66,74,255)
+    background-color: rgba(53,66,74,255);
 }
 .register-text {
     /*background-color: aqua;*/
@@ -262,21 +262,21 @@ a#employerReg {
     background-color: white;
     box-shadow: 20px 20px 30px -10px black;
     z-index: 1000;
-    height: 250px;
+    height: 150px;
     width: 430px;
 }
 
 #modalDesign {
-    height: 33%;
+    height: 37%;
     width: 100%;
-    background-color: rgba(255,0,0,255);
+    background-color: rgba(53,66,74,255);
 }
 
 #modalDesignPicture {
     height: 100%;
     width: 100%;
     background-image: url(ErrorBoxDesign.png);
-    background-size: 130%, 100%;
+    background-size: 90%, 100%;
     background-repeat: no-repeat;
     display: flex;
 }
