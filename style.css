@@ -173,7 +173,7 @@ span#OrangeText {
 span#formremindertext {
     color: whitesmoke;
     font-weight: lighter;
-    font-size: x-large;
+    font-size: large;
 }
 .registrationform form input[type="text"], .registrationform form input[type="password"] {
     height: 5vh;
@@ -193,7 +193,7 @@ span#formremindertext2 {
     margin-left: 15px;
     color: white;
     font-weight: lighter;
-    font-size: x-large;
+    font-size: large;
 }
 .registrationform form input[type="checkbox"] {
     height: 30px;

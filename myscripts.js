@@ -2,6 +2,7 @@
 function validateForm(event) {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
+    var confirmPass = document.getElementById('confirmpassword').value;
     
     // validate email if correct
     if (!isValidEmail(email)) {
@@ -13,6 +14,12 @@ function validateForm(event) {
     // validate password if atleast 8 characters long
     if (password.length < 8) {
         displayModal('Password must be at least 8 characters long.');
+        event.preventDefault(); // prevent form submission
+        return false;
+    }
+
+    if (confirmPass != password) {
+        displayModal('Password and Confirm Password does not match.');
         event.preventDefault(); // prevent form submission
         return false;
     }
