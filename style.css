@@ -150,7 +150,7 @@ span#OrangeText {
     height: 85%;
     width: 76.7vh;
     margin-top: 2px;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -178,7 +178,8 @@ span#formremindertext {
 .registrationform form input[type="text"], .registrationform form input[type="password"] {
     height: 5vh;
     width: 50vh;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     border: 2px solid black;
 }
 .checkbox-policy {
@@ -190,7 +191,7 @@ span#formremindertext {
 }
 span#formremindertext2 {
     margin-left: 15px;
-    color: gray;
+    color: white;
     font-weight: lighter;
     font-size: x-large;
 }
@@ -238,6 +239,7 @@ span#formremindertext2 {
     justify-content: right;
     font-size: x-large;
     height: 50px;
+    padding-bottom: 15px;
 }
 span#employerRegLink {
     padding-left: 5px;
