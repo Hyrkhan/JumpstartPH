@@ -24,7 +24,8 @@ function validateForm(event) {
         return false;
     }
 
-    return true; // if all true, allow submit
+    displayModal2('You have successfully registered your account.');
+    event.preventDefault();
 }
 
 // function that checks the phone number and validates it
@@ -40,7 +41,7 @@ function validateForm2(event) {
     return true; // if true, allow submit
 }
 
-// function that display the message on the div
+// function that display the error message on the div
 function displayModal(message) {
     var modal = document.getElementById('validationModal');
     var modalContent = document.getElementById('modalContent');
@@ -48,9 +49,23 @@ function displayModal(message) {
     modal.style.display = 'block';
 }
 
+// function that display the success message on the div
+function displayModal2(message) {
+    var modal = document.getElementById('validationModal2');
+    var modalContent = document.getElementById('modalContent2');
+    modalContent.innerHTML = message;
+    modal.style.display = 'block';
+}
+
 // function that closes the div
 function closeModal() {
     var modal = document.getElementById('validationModal');
+    modal.style.display = 'none';
+}
+
+// function that closes the div
+function closeModal2() {
+    var modal = document.getElementById('validationModal2');
     modal.style.display = 'none';
 }
 

@@ -318,3 +318,49 @@ span#RedText {
     color: white;
     /*background-color: bisque;*/
 }
+
+
+#modalDesignPicture2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(SuccessBoxDesign.png);
+    background-size: 90%, 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.SuccessTexttitle {
+    margin-left: 70px;
+    height: 100%;
+    width: 55%;
+    /*background-color: azure;*/
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+}
+span#GreenText {
+    color: rgba(126,217,87,255);
+}
+
+#modalContent2 {
+    color: rgba(98,106,112,255);
+    font-weight: bolder;
+    height: 66%;
+    width: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#closeModal2 {
+    padding-left: 105px;
+    cursor: pointer;
+    float: right;
+    color: white;
+    /*background-color: bisque;*/
+}
