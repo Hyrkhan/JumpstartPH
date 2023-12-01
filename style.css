@@ -156,6 +156,10 @@ span#OrangeText {
     justify-content: center;
     align-items: center;
     color: white;
+    background-image: url(boxdesign.png);
+    background-size: 15%;
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
 }
 .registrationform form {
     /*background-color: aquamarine;*/
@@ -261,16 +265,16 @@ a#employerReg {
 }
 
 #modalDesign {
-    height: 34%;
+    height: 33%;
     width: 100%;
-    /*background-color: bisque;*/
+    background-color: rgba(255,0,0,255);
 }
 
 #modalDesignPicture {
     height: 100%;
-    width: 430px;
+    width: 100%;
     background-image: url(ErrorBoxDesign.png);
-    background-size: 120%, 100%;
+    background-size: 130%, 100%;
     background-repeat: no-repeat;
     display: flex;
 }
