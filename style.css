@@ -3,14 +3,14 @@ body {
 }
 .whole-container {
     height: 100vh;
-    background-color: rgba(198,196,196,255);
+    background-color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 .top-content {
     height: 12%;
-    background-color: rgba(98,106,112,255);
+    background-color: rgba(116,125,130,255);
     display: flex;
     flex-direction: row;
     box-shadow: 10px 20px 30px -20px black;
@@ -84,7 +84,7 @@ body {
     font-size: x-large;
 }
 .button {
-    background-color: rgba(98,106,112,255);
+    background-color: rgba(116,125,130,255);
     /*background-color: aqua;*/
     border: none;
     color: white;
@@ -114,7 +114,7 @@ body {
 .whole-container .middle-content .registerandpic-middle-content .registrationform-box {
     height: 600px;
     width: 76.7vh;;
-    background-color: white;
+    background-color: rgba(116,125,130,255);
     margin-left: 100px;
     margin-right: 2.5%;
     margin-top: 11vh;
@@ -155,6 +155,7 @@ span#OrangeText {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .registrationform form {
     /*background-color: aquamarine;*/
@@ -166,7 +167,7 @@ span#OrangeText {
     align-items: left;
 }
 span#formremindertext {
-    color: gray;
+    color: whitesmoke;
     font-weight: lighter;
     font-size: x-large;
 }
