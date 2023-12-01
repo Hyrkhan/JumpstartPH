@@ -50,7 +50,7 @@ function closeModal() {
 // function that validates the email entered
 function isValidEmail(email) {
     // validate email format using RegEx
-    return /\S+@\S+\.\S+/.test(email);
+    return /^\S+@(\w+\.)?(\w+\.(com|edu|gov|co|govt)(\.\w+)?)$/.test(email);
 }
 
 // function that validates the phone number entered
