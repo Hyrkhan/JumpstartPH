@@ -5,6 +5,138 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="myscripts.js"></script>
+    <style>
+        .top-content {
+            height: 12%;
+            background-color: rgba(53,66,74,255);
+            display: flex;
+            flex-direction: row;
+            box-shadow: 10px 20px 30px -20px black;
+            width: 100%;
+        }
+        .logoside {
+            height: 80%;
+            padding-left: 2%;
+            width: 50vh;
+            /*background-color: wheat;*/
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            height: 100%;
+            width: 50vh;
+            background-image: url(JumpStartLogo.png);
+            background-size: 100% 100%;
+        }
+        .navigationside {
+            height: 100%;
+            width: 150vh;
+            /*background-color: aqua;*/
+            padding-left: 25px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: right;
+        }
+        .navigationside ul#navigationtabs {
+            margin: 0;
+            padding-left: 0;
+            height: 100%;
+            width: 115vh;
+            list-style: none; 
+            display: flex; 
+            flex-direction: row;
+            /*background-color: white;*/
+        }
+        .navigationside #navigationtabs li#navtabs
+        {
+            height: 100%;
+            width: 50%;
+            /*margin-left: 2%;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*cursor: pointer;*/
+            color: white;
+            font-size: 25px;
+            /*background-color: brown;*/
+        }
+        .navigationside #navigationtabs li#navtabspace {
+            height: 100%;
+            width: 5px;
+            background-color: white;
+        }
+        .currenttab {
+            background-color: rgba(228,77,38,255);
+            border: none;
+            color: white;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            font-size: x-large;
+        }
+        .button {
+            background-color: rgba(53,66,74,255);
+            /*background-color: aqua;*/
+            border: none;
+            color: white;
+            text-align: center;
+            height: 100px;
+            width: 175px;
+            font-size: x-large;
+            cursor: pointer;
+        }
+        .button:hover {
+            text-decoration: underline;
+        }
+        .middle-content-index {
+            height: 95%;
+            /*background-color: aqua;*/
+            display: flex;
+            flex-direction: column;
+        }
+        .classification_container {
+            background-color: gray;
+            height: 200px;
+            width: 100%;
+        }
+        .listings_containter {
+            background-color: bisque;
+            height: 100%;
+            width: 100%;
+        }
+        .listings_header {
+            background-color: whitesmoke;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 8%;
+        }
+        span#listings_headerText {
+            font-size: x-large;
+            font-weight: bolder;
+            color: rgba(53,66,74,255);
+        }
+        .job_listings {
+            background-color: aquamarine;
+            height: 610px;
+            width: 100%;
+        }
+        ul#job_list {
+            margin: 0;
+        }
+        ul#job_list li {
+            text-decoration: none;
+        }
+        ul#job_list li#job {
+            background-color: gray;
+            height: 200px;
+            width: 200px;
+            border-radius: 25px;
+        }
+    </style>
 </head>
 
 <body>
@@ -64,7 +196,23 @@
 
         </div>
 
-        <div class="middle-content">
+        <div class="middle-content-index">
+
+            <div class="classification_container">
+            </div>
+
+            <div class="listings_containter">
+                <div class="listings_header">
+                    <span id="listings_headerText">Recent Listings:</span>
+                </div>
+
+                <div class="job_listings">
+                    <ul id="job_list">
+                        <li id="job"></li>
+                    </ul>
+                </div>
+
+            </div>
 
         </div>
 
