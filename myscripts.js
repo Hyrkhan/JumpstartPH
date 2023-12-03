@@ -44,29 +44,37 @@ function validateForm2(event) {
 // function that display the error message on the div
 function displayModal(message) {
     var modal = document.getElementById('validationModal');
+    var overlay = document.getElementById('overlay');
     var modalContent = document.getElementById('modalContent');
     modalContent.innerHTML = message;
     modal.style.display = 'block';
+    overlay.style.display = 'block';
 }
 
 // function that display the success message on the div
 function displayModal2(message) {
     var modal = document.getElementById('validationModal2');
+    var overlay = document.getElementById('overlay');
     var modalContent = document.getElementById('modalContent2');
     modalContent.innerHTML = message;
     modal.style.display = 'block';
+    overlay.style.display = 'block';
 }
 
 // function that closes the div
 function closeModal() {
     var modal = document.getElementById('validationModal');
+    var overlay = document.getElementById('overlay');
     modal.style.display = 'none';
+    overlay.style.display = 'none';
 }
 
 // function that closes the div
 function closeModal2() {
     var modal = document.getElementById('validationModal2');
+    var overlay = document.getElementById('overlay');
     modal.style.display = 'none';
+    overlay.style.display = 'none';
 }
 
 // function that validates the email entered
