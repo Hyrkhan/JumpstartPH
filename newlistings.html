@@ -102,12 +102,12 @@
             width: 100%;
         }
         .listings_containter {
-            background-color: bisque;
+            /*background-color: bisque;*/
             height: 100%;
             width: 100%;
         }
         .listings_header {
-            background-color: whitesmoke;
+            /*background-color: whitesmoke;*/
             height: 100px;
             width: 100%;
             display: flex;
@@ -120,20 +120,24 @@
             color: rgba(53,66,74,255);
         }
         .job_listings {
-            background-color: aquamarine;
+            /*background-color: aquamarine;*/
             height: 610px;
             width: 100%;
         }
         ul#job_list {
             margin: 0;
+            padding-left: 7%;
+            display: flex;
+            flex-direction: row;
         }
         ul#job_list li {
-            text-decoration: none;
+            list-style: none;
+            margin-right: 70px;
         }
         ul#job_list li#job {
             background-color: gray;
-            height: 200px;
-            width: 200px;
+            height: 350px;
+            width: 300px;
             border-radius: 25px;
         }
     </style>
@@ -208,6 +212,9 @@
 
                 <div class="job_listings">
                     <ul id="job_list">
+                        <li id="job"></li>
+                        <li id="job"></li>
+                        <li id="job"></li>
                         <li id="job"></li>
                     </ul>
                 </div>
