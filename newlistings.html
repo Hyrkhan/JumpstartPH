@@ -97,9 +97,10 @@
             flex-direction: column;
         }
         .classification_container {
-            background-color: gray;
+            /*background-color: gray;*/
             height: 200px;
             width: 100%;
+            background-image: url(classificationBanner.png);
         }
         .listings_containter {
             /*background-color: bisque;*/
@@ -115,7 +116,7 @@
             padding-left: 8%;
         }
         span#listings_headerText {
-            font-size: x-large;
+            font-size: xx-large;
             font-weight: bolder;
             color: rgba(53,66,74,255);
         }
@@ -135,10 +136,13 @@
             margin-right: 70px;
         }
         ul#job_list li#job {
-            background-color: gray;
-            height: 350px;
-            width: 300px;
-            border-radius: 25px;
+            /*background-color: gray;*/
+            height: 400px;
+            width: 350px;
+            border-radius: 40px;
+            background-image: url(job_boxDesign.png);
+            background-size: 100%, 100%;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
@@ -203,6 +207,8 @@
         <div class="middle-content-index">
 
             <div class="classification_container">
+                <div class="classifications">
+                </div>
             </div>
 
             <div class="listings_containter">
