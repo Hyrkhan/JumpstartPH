@@ -98,9 +98,45 @@
         }
         .classification_container {
             /*background-color: gray;*/
-            height: 200px;
+            height: 300px;
             width: 100%;
             background-image: url(classificationBanner.png);
+            display: flex;
+        }
+        .classifications_What {
+            /*background-color: aqua;*/
+            height: 100%;
+            width: 50%;
+            margin-left: 10%;
+        }
+        .classifications_Where {
+            /*background-color: aqua;*/
+            height: 100%;
+            width: 50%;
+        }
+        .classifications_input {
+            /*background-color: antiquewhite;*/
+            height: 50%;
+            width: 100%;
+        }
+        .classifications_dropdown {
+            /*background-color: gray;*/
+            height: 50%;
+            width: 100%;
+        }
+        span#classificationLabel {
+            /*background-color: gray;*/
+            font-size: xx-large;
+            color: white;
+            font-weight: bold;
+        }
+        .classiInputs input[type="text"] {
+            height: 5vh;
+            width: 40vh;
+            border: 2.5px solid black;
+            border-radius: 10px;
+            font-size: large;
+            padding-left: 15px;
         }
         .listings_containter {
             /*background-color: bisque;*/
@@ -207,7 +243,34 @@
         <div class="middle-content-index">
 
             <div class="classification_container">
-                <div class="classifications">
+                <div class="classifications_What">
+
+                    <div class="classifications_input">
+                        <div class="classiLabels">
+                            <span id="classificationLabel">What</span>
+                        </div>
+                        <div class="classiInputs">
+                            <input type="text" id="keyword-search" placeholder="Enter Keywords">
+
+                        </div>
+                    </div>
+                    <div class="classifications_dropdown">
+                    </div>
+
+                </div>
+                <div class="classifications_Where">
+
+                    <div class="classifications_input">
+                        <div class="classiLabels">
+                            <span id="classificationLabel">Where</span>
+                        </div>
+                        <div class="classiInputs">
+                            <input type="text" id="keyword-search" placeholder="Enter Keywords">
+                        </div>
+                    </div>
+                    <div class="classifications_dropdown">
+                    </div>
+
                 </div>
             </div>
 
