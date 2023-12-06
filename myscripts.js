@@ -88,3 +88,52 @@ function isValidPhoneNumber(phoneNumber) {
     // validate phone number format using RegEx
     return /^09\d{2}-\d{3}-\d{4}$/.test(phoneNumber);
 }
+
+/* This is for the index page */
+
+var Industries = {
+    "Tourism": {},
+    "Data Science": {},
+    "Finance & Accounting": {},
+    "Engineering": {}
+}
+var JobLevel = {
+    "Entry Level": {},
+    "Senior Level": {},
+    "Managerial": {}
+}
+var SalaryRange = {
+    "< 10,000": {},
+    "< 20,000": {},
+    "< 30,000": {},
+    "< 40,000": {},
+    "> 50,000": {}
+}
+var SortBy = {
+    "Job Title": {},
+    "Job Level": {},
+    "Salary Range": {},
+    "Joblist Time Posted": {}
+}
+window.onload = function() {
+    var SelectedOption1 = document.getElementById("industry");
+    var SelectedOption2 = document.getElementById("joblevel");
+    var SelectedOption3 = document.getElementById("salaryRange");
+    var SelectedOption4 = document.getElementById("jobListingSort");
+    for (var industry in Industries) 
+    {
+        SelectedOption1.options[SelectedOption1.options.length] = new Option(industry, industry);
+    }
+    for (var level in JobLevel) 
+    {
+        SelectedOption2.options[SelectedOption2.options.length] = new Option(level, level);
+    }
+    for (var salary in SalaryRange) 
+    {
+        SelectedOption3.options[SelectedOption3.options.length] = new Option(salary, salary);
+    }
+    for (var sort in SortBy) 
+    {
+        SelectedOption4.options[SelectedOption4.options.length] = new Option(sort, sort);
+    }
+}
