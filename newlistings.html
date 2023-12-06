@@ -120,7 +120,7 @@
             width: 100%;
         }
         .classifications_dropdown {
-            /*background-color: gray;*/
+            background-color: blanchedalmond;
             height: 50%;
             width: 100%;
         }
@@ -130,6 +130,10 @@
             color: white;
             font-weight: bold;
         }
+        .classiInputs {
+            /*background-color: aqua;*/
+            display: flex;
+        }
         .classiInputs input[type="text"] {
             height: 5vh;
             width: 40vh;
@@ -137,6 +141,17 @@
             border-radius: 10px;
             font-size: large;
             padding-left: 15px;
+        }
+        select#industry {
+            height: 5.7vh;
+            width: 35vh;
+            border: 2.5px solid black;
+            border-radius: 10px;
+            margin-left: 15px;
+            margin-right: 20px;
+            font-size: large;
+            padding-left: 15px;
+            color: gray;
         }
         .listings_containter {
             /*background-color: bisque;*/
@@ -180,7 +195,23 @@
             background-size: 100%, 100%;
             background-repeat: no-repeat;
         }
+        
     </style>
+    <script>
+        var Industries = {
+            "Tourism": {},
+            "Data Science": {},
+            "Finance & Accounting": {},
+            "Engineering": {}
+        }
+        window.onload = function() {
+            var SelectedOption = document.getElementById("industry");
+            for (var industry in Industries) 
+            {
+                SelectedOption.options[SelectedOption.options.length] = new Option(industry, industry);
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -205,13 +236,13 @@
                     <li id="navtabspace"></li>
                     <li id="navtabs">
                         <button class="button">
-                            Profile
+                            Job Applications
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
                         <button class="button">
-                            Job Search
+                            Companies
                         </button>
                     </li>
                     <li id="navtabspace"></li>
@@ -226,12 +257,6 @@
                     <li id="navtabs">
                         <button class="button">
                             Johnny Sins
-                        </button>
-                    </li>
-                    <li id="navtabspace"></li>
-                    <li id="navtabs">
-                        <button class="button">
-                            Employee
                         </button>
                     </li>
                 </ul>
@@ -251,6 +276,12 @@
                         </div>
                         <div class="classiInputs">
                             <input type="text" id="keyword-search" placeholder="Enter Keywords">
+                            
+                            <select name="industry" id="industry">
+                                <option value="" selected="selected">
+                                    Industry
+                                </option>
+                            </select>
 
                         </div>
                     </div>
