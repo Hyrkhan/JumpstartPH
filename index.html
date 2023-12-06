@@ -4,19 +4,17 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
     <style>
-        .top-content-bar {
+        .top-content {
             height: 12%;
-            background-color: rgba(98,106,112,255, .15); 
-            backdrop-filter: blur(5px);
+            background-color: rgba(53,66,74,255);
             display: flex;
             flex-direction: row;
             box-shadow: 10px 20px 30px -20px black;
             width: 100%;
-            position: fixed;
-            z-index: 1000;
         }
-        .logoside-index {
+        .logoside {
             height: 80%;
             padding-left: 2%;
             width: 50vh;
@@ -32,7 +30,7 @@
             background-image: url(JumpStartLogo.png);
             background-size: 100% 100%;
         }
-        .navigationside-index {
+        .navigationside {
             height: 100%;
             width: 150vh;
             /*background-color: aqua;*/
@@ -41,7 +39,7 @@
             display: flex;
             justify-content: right;
         }
-        .navigationside-index ul#navigationtabs {
+        .navigationside ul#navigationtabs {
             margin: 0;
             padding-left: 0;
             height: 100%;
@@ -51,7 +49,7 @@
             flex-direction: row;
             /*background-color: white;*/
         }
-        .navigationside-index #navigationtabs li#navtabs
+        .navigationside #navigationtabs li#navtabs
         {
             height: 100%;
             width: 50%;
@@ -64,128 +62,247 @@
             font-size: 25px;
             /*background-color: brown;*/
         }
-        .currenttab-index {
-            background-color: rgba(228, 77, 38, .4);
-            border: none;
-            color: white;
-            text-align: center;
-            height: 100%;
-            width: 100%;
-            font-size: x-large;
-            backdrop-filter: blur(10px);
-        }
-        .button-index {
-            background-color: rgba(98, 106, 112, .15);
-            /*background-color: aqua;*/
-            border: none;
-            color: white;
-            text-align: center;
-            height: 110px;
-            width: 175px;
-            font-size: x-large;
-            cursor: pointer;
-        }
-        .navigationside-index #navigationtabs li#navtabspace {
+        .navigationside #navigationtabs li#navtabspace {
             height: 100%;
             width: 5px;
             background-color: white;
         }
-        
-        .contentbox {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .homepage_box {
-            height: 100vh;
-            width: 100%;
-        }
-        .homepage_box .homepageBGpict {
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-            background-image: url(homepageBG.PNG);
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-        .welcomingP {
+        .currenttab {
+            background-color: rgba(228,77,38,255);
+            border: none;
             color: white;
+            text-align: center;
             height: 100%;
             width: 100%;
+            font-size: x-large;
+        }
+        .button {
+            background-color: rgba(53,66,74,255);
+            /*background-color: aqua;*/
+            border: none;
+            color: white;
+            text-align: center;
+            height: 100px;
+            width: 175px;
+            font-size: x-large;
+            cursor: pointer;
+        }
+        .button:hover {
+            text-decoration: underline;
+        }
+        .middle-content-index {
+            height: 95%;
+            /*background-color: aqua;*/
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
         }
-        p#welcomeParagraph {
-            margin-top: 300px;
-            font-size: xxx-large;
-        }
-        .aboutpage_box {
-            height: 100vh;
+        .classification_container {
+            /*background-color: gray;*/
+            height: 350px;
             width: 100%;
-            background-color: rgba(98,106,112,255);
+            background-image: url(classificationBanner.png);
+            display: flex;
         }
+        .classifications_What {
+            /*background-color: aqua;*/
+            height: 100%;
+            width: 50%;
+            margin-left: 10%;
+        }
+        .classifications_Where {
+            /*background-color: aqua;*/
+            height: 100%;
+            width: 50%;
+        }
+        .classifications_input {
+            /*background-color: antiquewhite;*/
+            height: 50%;
+            width: 100%;
+            padding-top: 5px;
+        }
+        .classifications_dropdown {
+            /*background-color: blanchedalmond;*/
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        span#classificationLabel {
+            /*background-color: gray;*/
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        .classiInputs {
+            /*background-color: aqua;*/
+            display: flex;
+        }
+        .classiInputs input[type="text"] {
+            height: 4.7vh;
+            width: 40vh;
+            border: 2.5px solid black;
+            border-radius: 10px;
+            font-size: large;
+            padding-left: 15px;
+        }
+        select#industry {
+            height: 5.5vh;
+            width: 35vh;
+            border: 2.5px solid black;
+            border-radius: 10px;
+            margin-left: 15px;
+            margin-right: 20px;
+            font-size: large;
+            padding-left: 15px;
+            color: gray;
+        }
+        select#joblevel ,select#salaryRange, select#jobListingSort  {
+            height: 5vh;
+            width: 25vh;
+            border: 2.5px solid black;
+            border-radius: 10px;
+            margin-right: 15px;
+            font-size: large;
+            padding-left: 15px;
+            color: gray;
+        }
+        .listings_containter {
+            /*background-color: bisque;*/
+            height: 100%;
+            width: 100%;
+        }
+        .listings_header {
+            /*background-color: whitesmoke;*/
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 8%;
+        }
+        span#listings_headerText {
+            font-size: xx-large;
+            font-weight: bolder;
+            color: rgba(53,66,74,255);
+        }
+        .job_listings {
+            /*background-color: aquamarine;*/
+            height: 610px;
+            width: 100%;
+        }
+        ul#job_list {
+            margin: 0;
+            padding-left: 7%;
+            display: flex;
+            flex-direction: row;
+        }
+        ul#job_list li {
+            list-style: none;
+            margin-right: 70px;
+        }
+        ul#job_list li#job {
+            /*background-color: gray;*/
+            height: 400px;
+            width: 350px;
+            border-radius: 40px;
+            background-image: url(job_boxDesign.png);
+            background-size: 100%, 100%;
+            background-repeat: no-repeat;
+        }
+        
     </style>
+    <script>
+        var Industries = {
+            "Tourism": {},
+            "Data Science": {},
+            "Finance & Accounting": {},
+            "Engineering": {}
+        }
+        var JobLevel = {
+            "Entry Level": {},
+            "Senior Level": {},
+            "Managerial": {}
+        }
+        var SalaryRange = {
+            "< 10,000": {},
+            "< 20,000": {},
+            "< 30,000": {},
+            "< 40,000": {},
+            "> 50,000": {}
+        }
+        var SortBy = {
+            "Job Title": {},
+            "Job Level": {},
+            "Salary Range": {},
+            "Joblist Time Posted": {}
+        }
+        window.onload = function() {
+            var SelectedOption1 = document.getElementById("industry");
+            var SelectedOption2 = document.getElementById("joblevel");
+            var SelectedOption3 = document.getElementById("salaryRange");
+            var SelectedOption4 = document.getElementById("jobListingSort");
+            for (var industry in Industries) 
+            {
+                SelectedOption1.options[SelectedOption1.options.length] = new Option(industry, industry);
+            }
+            for (var level in JobLevel) 
+            {
+                SelectedOption2.options[SelectedOption2.options.length] = new Option(level, level);
+            }
+            for (var salary in SalaryRange) 
+            {
+                SelectedOption3.options[SelectedOption3.options.length] = new Option(salary, salary);
+            }
+            for (var sort in SortBy) 
+            {
+                SelectedOption4.options[SelectedOption4.options.length] = new Option(sort, sort);
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div class="whole-container">
 
-        <div class="top-content-bar">
-            <div class="logoside-index">
+        <div class="top-content">
+
+            <div class="logoside">
                 <div class="logo">
                 </div>
             </div>
 
-            <div class="navigationside-index">
+            <div class="navigationside">
 
                 <ul id="navigationtabs">
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="currenttab-index">
+                        <button class="currenttab">
                             Home
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <a href="newlistings.html">
-                            <button class="button-index">
-                                About
-                            </button>
-                        </a>
-                    </li>
-                    <li id="navtabspace"></li>
-                    <li id="navtabs">
-                        <button class="button-index">
-                            Employers
+                        <button class="button">
+                            Job Applications
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button-index">
-                            Career Advice
+                        <button class="button">
+                            Companies
                         </button>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
                         <a href="EmployeeRegistration.html">
-                            <button class="button-index">
+                            <button class="button">
                                 Register
                             </button>
                         </a>
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button-index">
-                            Login
+                        <button class="button">
+                            Johnny Sins
                         </button>
                     </li>
                 </ul>
@@ -193,25 +310,84 @@
             </div>
 
         </div>
-        <div class="contentbox">
-            <div class="homepage_box">
-                <div class="homepageBGpict">
-                    <div class="overlay">
-                        <div class="welcomingP">
-                            <p id="welcomeParagraph">
-                                Jumpstart your career with <span id="OrangeText">us</span>
-                                and <span id="OrangeText">explore</span><br>
-                                <span id="OrangeText">endless opportunities</span>.
-                                Your next big leap starts <span id="OrangeText">here</span>.
-                            </p>
+
+        <div class="middle-content-index">
+
+            <div class="classification_container">
+                <div class="classifications_What">
+
+                    <div class="classifications_input">
+                        <div class="classiLabels">
+                            <span id="classificationLabel">What</span>
+                        </div>
+                        <div class="classiInputs">
+                            <input type="text" id="keyword-search" placeholder="Enter Keywords">
                             
+                            <select name="industry" id="industry">
+                                <option value="" selected="selected">
+                                    Industry
+                                </option>
+                            </select>
                         </div>
                     </div>
+
+                    <div class="classifications_dropdown">
+
+                        <select name="Job_Level" id="joblevel">
+                            <option value="" selected="selected">
+                                Job Level
+                            </option>
+                        </select>
+
+                        <select name="SalaryRange" id="salaryRange">
+                            <option value="" selected="selected">
+                                Salary Range
+                            </option>
+                        </select>
+
+                        <select name="JobListingSort" id="jobListingSort">
+                            <option value="" selected="selected">
+                                Sort by
+                            </option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="classifications_Where">
+
+                    <div class="classifications_input">
+                        <div class="classiLabels">
+                            <span id="classificationLabel">Where</span>
+                        </div>
+                        <div class="classiInputs">
+                            <input type="text" id="keyword-search" placeholder="Enter Keywords">
+                        </div>
+                    </div>
+                    <div class="classifications_dropdown">
+                    </div>
+
                 </div>
             </div>
-            <div class="aboutpage_box">
+
+            <div class="listings_containter">
+                <div class="listings_header">
+                    <span id="listings_headerText">Recent Listings:</span>
+                </div>
+
+                <div class="job_listings">
+                    <ul id="job_list">
+                        <li id="job"></li>
+                        <li id="job"></li>
+                        <li id="job"></li>
+                        <li id="job"></li>
+                    </ul>
+                </div>
+
             </div>
+
         </div>
+
     </div>
 </body>
 
