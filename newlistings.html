@@ -120,7 +120,7 @@
             width: 100%;
         }
         .classifications_dropdown {
-            background-color: blanchedalmond;
+            /*background-color: blanchedalmond;*/
             height: 50%;
             width: 100%;
             display: flex;
@@ -247,6 +247,14 @@
             for (var level in JobLevel) 
             {
                 SelectedOption2.options[SelectedOption2.options.length] = new Option(level, level);
+            }
+            for (var salary in SalaryRange) 
+            {
+                SelectedOption3.options[SelectedOption3.options.length] = new Option(salary, salary);
+            }
+            for (var sort in SortBy) 
+            {
+                SelectedOption4.options[SelectedOption4.options.length] = new Option(sort, sort);
             }
         }
     </script>
