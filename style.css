@@ -609,10 +609,50 @@ ul#appliedjob_list li {
     margin-right: 70px;
 }
 ul#appliedjob_list li#appliedjob {
-    background-color: gray;
+    /*background-color: gray;*/
     background-image: url(stretchedBoxDesign.png);
     background-size: 105%, 100%;
     height: 180px;
+    width: 400px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+}
+
+/* This is for the Company List */
+
+span#companyListings_headerText {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(228,77,38,255);
+    border-radius: 10px;
+    height: 50px;
+    width: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+.company_listings {
+    /*background-color: aquamarine;*/
+    height: 610px;
+    width: 100%;
+}
+ul#company_list {
+    margin: 0;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: row;
+}
+ul#company_list li {
+    list-style: none;
+    margin-right: 70px;
+}
+ul#company_list li#company {
+    /*background-color: gray;*/
+    background-image: url(stretchedBoxDesign.png);
+    background-size: 100%, 100%;
+    height: 160px;
     width: 400px;
     border-radius: 40px;
     background-repeat: no-repeat;
