@@ -30,7 +30,7 @@ body {
 .logo {
     height: 100%;
     width: 50vh;
-    background-image: url(JumpStartLogo.png);
+    background-image: url(/images/JumpStartLogo.png);
     background-size: 100% 100%;
 }
 .navigationside {
@@ -123,7 +123,7 @@ body {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    background-image: url(formdes.png);
+    background-image: url(/images/formdes.png);
     background-size: 90%, 100%;
     background-color: rgba(53,66,74,255);
 }
@@ -152,7 +152,7 @@ span#OrangeText {
     justify-content: center;
     align-items: center;
     color: white;
-    background-image: url(boxdesign.png);
+    background-image: url(/images/boxdesign.png);
     background-size: 15%;
     background-position: 100% 35%;
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@ span#formremindertext2 {
     width: 80vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(employerReg.png);
+    background-image: url(/images/employerReg.png);
     background-size: 90% 90%;
 }
 .picture {
@@ -226,7 +226,7 @@ span#formremindertext2 {
     width: 80vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(employeeReg.png);
+    background-image: url(/images/employeeReg.png);
     background-size: 90% 90%;
 }
 .employerRegtext {
@@ -271,7 +271,7 @@ a#employerReg {
 #modalDesignPicture {
     height: 100%;
     width: 100%;
-    background-image: url(ErrorBoxDesign.png);
+    background-image: url(/images/ErrorBoxDesign.png);
     background-size: 90%, 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -319,7 +319,7 @@ span#RedText {
 #modalDesignPicture2 {
     height: 100%;
     width: 100%;
-    background-image: url(SuccessBoxDesign.png);
+    background-image: url(/images/SuccessBoxDesign.png);
     background-size: 90%, 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -412,7 +412,7 @@ span#GreenText {
     background-color: white;
 }
 .UserClassificationLogo {
-    background-image: url(employeeLogo.png);
+    background-image: url(/images/employeeLogo.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 80%;
@@ -456,7 +456,7 @@ span#UserClassification {
     /*background-color: gray;*/
     height: 350px;
     width: 100%;
-    background-image: url(classificationBanner.png);
+    background-image: url(/images/classificationBanner.png);
     display: flex;
 }
 .classifications_What {
@@ -560,7 +560,7 @@ ul#job_list li#job {
     height: 400px;
     width: 350px;
     border-radius: 40px;
-    background-image: url(job_boxDesign.png);
+    background-image: url(/images/job_boxDesign.png);
     background-size: 112%, 100%;
     background-repeat: no-repeat;
 }
@@ -612,7 +612,7 @@ ul#appliedjob_list li {
 }
 ul#appliedjob_list li#appliedjob {
     /*background-color: gray;*/
-    background-image: url(stretchedBoxDesign.png);
+    background-image: url(/images/stretchedBoxDesign.png);
     background-size: 105%, 100%;
     height: 180px;
     width: 400px;
@@ -652,10 +652,125 @@ ul#company_list li {
 }
 ul#company_list li#company {
     /*background-color: gray;*/
-    background-image: url(stretchedBoxDesign.png);
+    background-image: url(/images/stretchedBoxDesign.png);
     background-size: 100%, 100%;
     height: 160px;
     width: 400px;
     border-radius: 40px;
     background-repeat: no-repeat;
+}
+
+/* This is for the profile settings Employee */
+
+.whole_settings_container {
+    /*background-color: beige;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.settings_leftside {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 90vh;
+    border: 1px solid;
+}
+.settings_rightside {
+    /*background-color: rgb(158, 141, 219);*/
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+}
+.UserClassificationLogodiv {
+    /*background-color: gray;*/
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logobox {
+    background-image: url(/images/employeeLogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: orchid;*/
+    height: 350px;
+    width: 350px;
+}
+.UserClassificationdetailsdiv {
+    /*background-color: blanchedalmond;*/
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span#userclassi {
+    /*background-color: blueviolet;*/
+    font-size: xx-large;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: bolder;
+    color: rgba(228,77,38,255);
+}
+ul#userdetails {
+    /*background-color: cadetblue;*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul#userdetails li {
+    /*background-color: whitesmoke;*/
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+ul#settings_list {
+    /*background-color: bisque;*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+ul#settings_list li {
+    list-style: none;
+    /*background-color: brown;*/
+    height: 16.65%;
+    
+}
+.settings {
+    height: 100%;
+    width: 100%;
+    background-color: none;
+    padding: 0;
+}
+.settings_title, .settings_title_deleteAcc {
+    /*background-color: gray;*/
+    height: 50%;
+    width: 80vh;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.settings_desc, .settings_desc_deleteAcc  {
+    /*background-color: aqua;*/
+    height: 50%;
+    width: 80vh;
+    font-size: x-large;
+    color: gray;
+    text-align: left;
+    padding-left: 150px;
+}
+.settings_title_deleteAcc, .settings_desc_deleteAcc {
+    color: rgba(228,77,38,255);
 }
