@@ -29,6 +29,7 @@
         span#listing_textHeader {
             color: white;
             font-size: xxx-large;
+            font-weight: bolder;
         }
         .listing_form_container {
             background-color: beige;
@@ -46,9 +47,20 @@
         .listingform {
             background-color: rgb(176, 176, 253);
             height: 50%;
-
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: xx-large;
+            font-weight: bold;
+            padding-left: 30px;
         }
-
+        .listingform input[type="text"] {
+            height: 50px;
+            width: 350px;
+            border-radius: 15px;
+            padding-left: 15px;
+            margin-top: 10px;
+        }
         .bottom_listing_form_container {
             background-color: rebeccapurple;
             height: 42.5%;
@@ -122,26 +134,36 @@
 
                 <form class="createjoblisting_box" action="">
                     <div class="listing_boxdesign">
-                        <span id="listing_textHeader">Create Job Listing</span>
+                        <span id="listing_textHeader"><span id="OrangeText">C</span>reate Job Listing</span>
                     </div>
 
                     <div class="listing_form_container">
                         <div class="seperator_container">
                             <div class="listingform">
-                                <label for="jobtitle">Job Title:</label><br>
+                                <label for="jobtitle">Job Title:</label>
                                 <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter Job Title">
                             </div>
-                        </div>
-
-                        <div class="seperator_container">
                             <div class="listingform">
-                                
+                                <label for="salary">Salary:</label>
+                                <input type="text" id="salary" name="salary" placeholder="Enter Salary">
                             </div>
                         </div>
 
                         <div class="seperator_container">
                             <div class="listingform">
-                                
+                                <label for="jobindustry">Job Industry:</label>
+                                <input type="text" id="jobindustry" name="jobindustry" placeholder="Enter Job Industry">
+                            </div>
+                            <div class="listingform">
+                                <label for="jobrequirements">Job Requirements:</label>
+                                <input type="text" id="jobrequirements" name="jobrequirements" placeholder="Enter Job Requirements">
+                            </div>
+                        </div>
+
+                        <div class="seperator_container">
+                            <div class="listingform">
+                                <label for="joblocation">Location:</label>
+                                <input type="text" id="joblocation" name="joblocation" placeholder="Enter Location">
                             </div>
                         </div>
                     </div>
