@@ -83,17 +83,36 @@
         ul#settings_list li {
             list-style: none;
             /*background-color: brown;*/
-            height: 20%;
+            height: 16.65%;
             
         }
         .settings {
             height: 100%;
             width: 100%;
             background-color: none;
+            padding: 0;
         }
-        .settings_deleteAcc {
-            height: 100%;
-            width: 100%;
+        .settings_title, .settings_title_deleteAcc {
+            /*background-color: gray;*/
+            height: 50%;
+            width: 80vh;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: left;
+            padding-left: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .settings_desc, .settings_desc_deleteAcc  {
+            /*background-color: aqua;*/
+            height: 50%;
+            width: 80vh;
+            font-size: x-large;
+            color: gray;
+            text-align: left;
+            padding-left: 150px;
+        }
+        .settings_title_deleteAcc, .settings_desc_deleteAcc {
             color: rgba(228,77,38,255);
         }
     </style>
@@ -170,6 +189,7 @@
                         <ul id="userdetails">
                             <li id="details_name">Name: </li>
                             <li id="details_email">Email: </li>
+                            <li id="details_contact">Contact: </li>
                         </ul>
                     </div>
                 </div>
@@ -178,27 +198,38 @@
                     <ul id="settings_list">
                         <li>
                             <button class="settings">
-                                Upload Resume
+                                <div class="settings_title">Upload/Update Resume</div>
+                                <div class="settings_desc">Upload or Update your resume here</div>
                             </button>
                         </li>
                         <li>
                             <button class="settings">
-                                Change Name
+                                <div class="settings_title">Change Name</div>
+                                <div class="settings_desc">Change your name here</div>
                             </button>
                         </li>
                         <li>
                             <button class="settings">
-                                Change Email
+                                <div class="settings_title">Change Email</div>
+                                <div class="settings_desc">Change your email here</div>
                             </button>
                         </li>
                         <li>
                             <button class="settings">
-                                Change Password
+                                <div class="settings_title">Change Password</div>
+                                <div class="settings_desc">Change your password here</div>
                             </button>
                         </li>
                         <li>
-                            <button class="settings_deleteAcc">
-                                Delete Account
+                            <button class="settings">
+                                <div class="settings_title">Change Contact Number</div>
+                                <div class="settings_desc">Change your contact number here</div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="settings">
+                                <div class="settings_title_deleteAcc">Delete Account</div>
+                                <div class="settings_desc_deleteAcc">DELETE ACCOUNT FROM THE DATABASE</div>
                             </button>
                         </li>
                     </ul>
