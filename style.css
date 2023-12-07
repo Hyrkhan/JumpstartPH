@@ -774,3 +774,30 @@ ul#settings_list li {
 .settings_title_deleteAcc, .settings_desc_deleteAcc {
     color: rgba(228,77,38,255);
 }
+
+/* This is for the Employer Homepage */
+
+.yourjob_listings {
+    /*background-color: aquamarine;*/
+    height: 610px;
+    width: 100%;
+}
+ul#yourjob_list {
+    margin: 0;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: row;
+}
+ul#yourjob_list li {
+    list-style: none;
+    margin-right: 40px;
+}
+ul#yourjob_list li#yourjoblist {
+    /*background-color: gray;*/
+    background-image: url(/images/stretchedBoxDesign.png);
+    background-size: 100%, 100%;
+    height: 250px;
+    width: 450px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+}
