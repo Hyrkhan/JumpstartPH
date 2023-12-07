@@ -7,7 +7,7 @@
     <script src="/myscripts.js"></script>   
     <style>
         .createjoblisting_container {
-            background-color: gray;
+            /*background-color: gray;*/
             height: 100%;
             width: 100%;
             display: flex;
@@ -15,7 +15,7 @@
             align-items: center;
         }
         .createjoblisting_box {
-            background-color: violet;
+            background-color: gray;
             height: 75vh;
             width: 160vh;
         }
@@ -32,12 +32,12 @@
             font-weight: bolder;
         }
         .listing_form_container {
-            background-color: beige;
+            /*background-color: beige;*/
             height: 42.5%;
             display: flex;
         }
         .seperator_container {
-            background-color: aqua;
+            /*background-color: aqua;*/
             height: 100%;
             width: 33%;
             margin-right: 5px;
@@ -45,7 +45,7 @@
             flex-direction: column;
         }
         .listingform {
-            background-color: rgb(176, 176, 253);
+            /*background-color: rgb(176, 176, 253);*/
             height: 50%;
             display: flex;
             flex-direction: column;
@@ -53,6 +53,7 @@
             font-size: xx-large;
             font-weight: bold;
             padding-left: 30px;
+            color: white;
         }
         .listingform input[type="text"] {
             height: 50px;
@@ -62,8 +63,50 @@
             margin-top: 10px;
         }
         .bottom_listing_form_container {
-            background-color: rebeccapurple;
+            /*background-color: rebeccapurple;*/
             height: 42.5%;
+            display: flex;
+        }
+        .bottom_listing_form {
+            /*background-color: antiquewhite;*/
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: xx-large;
+            font-weight: bold;
+            padding-left: 30px;
+            color: white;
+        }
+        .bottom_listing_form input[type="text"] {
+            height: 150px;
+            width: 650px;
+            border-radius: 15px;
+            padding-left: 15px;
+            margin-top: 10px;
+            font-size: large;
+        }
+        .bottom_listing_form_submit {
+            /*background-color: antiquewhite;*/
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+        .bottom_listing_form_submit input[type="submit"] {
+            height: 100px;
+            width: 350px;
+            border-radius: 15px;
+            font-size: x-large;
+            margin-bottom: 50px;
+            margin-right: 50px;
+            background-color: rgba(228,77,38,255);
+            color: white;
+        }
+        .bottom_listing_form_submit input[type="submit"]:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -132,7 +175,7 @@
         <div class="middle-content-index">
             <div class="createjoblisting_container">
 
-                <form class="createjoblisting_box" action="">
+                <form class="createjoblisting_box" action="" onsubmit="">
                     <div class="listing_boxdesign">
                         <span id="listing_textHeader"><span id="OrangeText">C</span>reate Job Listing</span>
                     </div>
@@ -169,7 +212,13 @@
                     </div>
 
                     <div class="bottom_listing_form_container">
-
+                        <div class="bottom_listing_form">
+                            <label for="jobdescription">Job Description:</label>
+                            <input type="text" id="jobdescription" name="jobdescription" placeholder="Enter Job Description">
+                        </div>
+                        <div class="bottom_listing_form_submit">
+                            <input type="submit" value="POST">
+                        </div>
                     </div>
                     
                 </form>
