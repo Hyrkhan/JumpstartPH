@@ -801,3 +801,113 @@ ul#yourjob_list li#yourjoblist {
     border-radius: 40px;
     background-repeat: no-repeat;
 }
+
+/* This is for the Create Job Listing Webpage */
+
+.createjoblisting_container {
+    /*background-color: gray;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createjoblisting_box {
+    background-color: gray;
+    height: 75vh;
+    width: 160vh;
+}
+.listing_boxdesign {
+    background-color: rgba(53,66,74,255);
+    background-image: url(/images/superlongBoxDesign.png);
+    background-size: 82%, 100%;
+    background-repeat: no-repeat;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span#listing_textHeader {
+    color: white;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+.listing_form_container {
+    /*background-color: beige;*/
+    height: 42.5%;
+    display: flex;
+}
+.seperator_container {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 33%;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.listingform {
+    /*background-color: rgb(176, 176, 253);*/
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-left: 30px;
+    color: white;
+}
+.listingform input[type="text"] {
+    height: 50px;
+    width: 350px;
+    border-radius: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border: 2px solid;
+}
+.bottom_listing_form_container {
+    /*background-color: rebeccapurple;*/
+    height: 42.5%;
+    display: flex;
+}
+.bottom_listing_form {
+    /*background-color: antiquewhite;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-left: 30px;
+    color: white;
+}
+.bottom_listing_form input[type="text"] {
+    height: 150px;
+    width: 650px;
+    border-radius: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: large;
+    border: 2px solid;
+}
+.bottom_listing_form_submit {
+    /*background-color: antiquewhite;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.bottom_listing_form_submit input[type="submit"] {
+    height: 100px;
+    width: 350px;
+    border-radius: 15px;
+    font-size: x-large;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    background-color: rgba(228,77,38,255);
+    color: white;
+}
+.bottom_listing_form_submit input[type="submit"]:hover {
+    text-decoration: underline;
+}
