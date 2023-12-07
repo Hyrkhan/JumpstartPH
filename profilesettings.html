@@ -5,6 +5,98 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="myscripts.js"></script>
+    <style>
+        .whole_settings_container {
+            /*background-color: beige;*/
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+        .settings_leftside {
+            /*background-color: aqua;*/
+            height: 100%;
+            width: 90vh;
+            border: 1px solid;
+        }
+        .settings_rightside {
+            /*background-color: rgb(158, 141, 219);*/
+            height: 100%;
+            width: 100%;
+            border: 1px solid;
+        }
+        .UserClassificationLogodiv {
+            /*background-color: gray;*/
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logobox {
+            background-image: url(employeeLogo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*background-color: orchid;*/
+            height: 350px;
+            width: 350px;
+        }
+        .UserClassificationdetailsdiv {
+            /*background-color: blanchedalmond;*/
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        span#userclassi {
+            /*background-color: blueviolet;*/
+            font-size: xx-large;
+            text-align: center;
+            height: 50px;
+            width: 100%;
+        }
+        ul#userdetails {
+            /*background-color: cadetblue;*/
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ul#userdetails li {
+            /*background-color: whitesmoke;*/
+            list-style: none;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            font-size: x-large;
+        }
+        ul#settings_list {
+            /*background-color: bisque;*/
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+        }
+        ul#settings_list li {
+            list-style: none;
+            /*background-color: brown;*/
+            height: 20%;
+            
+        }
+        .settings {
+            height: 100%;
+            width: 100%;
+            background-color: none;
+        }
+        .settings_deleteAcc {
+            height: 100%;
+            width: 100%;
+            color: rgba(228,77,38,255);
+        }
+    </style>
 </head>
 
 <body>
@@ -38,7 +130,7 @@
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="currenttab-index">
+                        <button class="button-index">
                             Companies
                         </button>
                     </li>
@@ -52,10 +144,11 @@
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button-index">
+                        <button class="currenttab-index">
                             Johnny Sins
                         </button>
                     </li>
+                    <li id="navtabspace"></li>
                     <li id="navtabs">
                         <div class="UserClassificationLogo"></div>
                         <span id="UserClassification">Employee</span>
@@ -67,7 +160,51 @@
         </div>
 
         <div class="middle-content-index">
-            
+            <div class="whole_settings_container">
+                <div class="settings_leftside">
+                    <div class="UserClassificationLogodiv">
+                        <div class="logobox"></div>
+                    </div>
+                    <div class="UserClassificationdetailsdiv">
+                        <span id="userclassi">Employee</span>
+                        <ul id="userdetails">
+                            <li id="details_name">Name: </li>
+                            <li id="details_email">Email: </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="settings_rightside">
+                    <ul id="settings_list">
+                        <li>
+                            <button class="settings">
+                                Upload Resume
+                            </button>
+                        </li>
+                        <li>
+                            <button class="settings">
+                                Change Name
+                            </button>
+                        </li>
+                        <li>
+                            <button class="settings">
+                                Change Email
+                            </button>
+                        </li>
+                        <li>
+                            <button class="settings">
+                                Change Password
+                            </button>
+                        </li>
+                        <li>
+                            <button class="settings_deleteAcc">
+                                Delete Account
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
 
     </div>
