@@ -5,6 +5,55 @@
 <head>
     <link rel="stylesheet" href="/style.css">
     <script src="/myscripts.js"></script>   
+    <style>
+        .createjoblisting_container {
+            background-color: gray;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .createjoblisting_box {
+            background-color: violet;
+            height: 75vh;
+            width: 160vh;
+        }
+        .listing_boxdesign {
+            background-color: black;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span#listing_textHeader {
+            color: white;
+            font-size: xxx-large;
+        }
+        .listing_form_container {
+            background-color: beige;
+            height: 42.5%;
+            display: flex;
+        }
+        .seperator_container {
+            background-color: aqua;
+            height: 100%;
+            width: 33%;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .listingform {
+            background-color: rgb(176, 176, 253);
+            height: 50%;
+
+        }
+
+        .bottom_listing_form_container {
+            background-color: rebeccapurple;
+            height: 42.5%;
+        }
+    </style>
 </head>
 
 <body>
@@ -69,7 +118,41 @@
         </div>
 
         <div class="middle-content-index">
-            
+            <div class="createjoblisting_container">
+
+                <form class="createjoblisting_box" action="">
+                    <div class="listing_boxdesign">
+                        <span id="listing_textHeader">Create Job Listing</span>
+                    </div>
+
+                    <div class="listing_form_container">
+                        <div class="seperator_container">
+                            <div class="listingform">
+                                <label for="jobtitle">Job Title:</label><br>
+                                <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter Job Title">
+                            </div>
+                        </div>
+
+                        <div class="seperator_container">
+                            <div class="listingform">
+                                
+                            </div>
+                        </div>
+
+                        <div class="seperator_container">
+                            <div class="listingform">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom_listing_form_container">
+
+                    </div>
+                    
+                </form>
+
+            </div>
         </div>
 
     </div>
