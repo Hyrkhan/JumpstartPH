@@ -372,7 +372,7 @@ span#GreenText {
     z-index: 999; /* Set a higher z-index than your modals */
 }
 
-/* This is for the index page*/
+/* This is for the Employee Homepage page*/
 
 .navigationside-index {
     height: 100%;
@@ -547,6 +547,7 @@ span#listings_headerText {
 }
 ul#job_list {
     margin: 0;
+    width: 170vh;
     padding-left: 7%;
     display: flex;
     flex-direction: row;
@@ -563,6 +564,74 @@ ul#job_list li#job {
     background-image: url(/images/job_boxDesign.png);
     background-size: 112%, 100%;
     background-repeat: no-repeat;
+}
+.joblistheader_container {
+    /*background-color: aqua;*/
+    height: 20%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.joblistheadercompanylogo {
+    /*background-color: beige;*/
+    height: 90%;
+    width: 27%;
+    background-size: 70%, 100%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+#company1 {
+    background-image: url(/images/companyLogo1.png);
+}
+#company2 {
+    background-image: url(/images/companyLogo2.png);
+}
+#company3 {
+    background-image: url(/images/companyLogo3.png);
+}
+#company4 {
+    background-image: url(/images/companyLogo4.png);
+    margin-top: 45px;
+}
+.joblistheaderText {
+    /*background-color: gray;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+}
+.joblistheaderSavelogo {
+    /*background-color: pink;*/
+    height: 70%;
+    width: 20%;
+    background-image: url(/images/save.png);
+    background-size: 60%, 100%;
+    margin-top: 15px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+.joblistdetails_container {
+    /*background-color: brown;*/
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: white;
+    font-size: large;
+}
+span#joblist_title {
+    font-size: larger;
+    font-weight: bold;
+}
+ul#joblistReq li {
+    list-style: disc;
 }
 
 /* This is for the job applications page*/
@@ -688,7 +757,7 @@ ul#company_list li#company {
     justify-content: center;
 }
 .logobox {
-    background-image: url(/images/employeeLogo.png);
+    background-image: url(/images/vincent.png);
     background-size: cover;
     background-repeat: no-repeat;
     /*background-color: orchid;*/
@@ -985,7 +1054,7 @@ ul#employeelist li#employee .employeeLogo {
     /*background-color: wheat;*/
     height: 100%;
     width: 10%;
-    background-image: url(/images/employeeLogo.png);
+    background-image: url(/images/tristan.png);
     background-repeat: no-repeat;
     background-size: 70%, 100%;
 }
