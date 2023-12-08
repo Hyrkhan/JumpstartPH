@@ -911,3 +911,97 @@ span#listing_textHeader {
 .bottom_listing_form_submit input[type="submit"]:hover {
     text-decoration: underline;
 }
+
+/* This is for the Employees List Page*/
+
+.middle-content-list {
+    height: 95%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+}
+.employeelist_container {
+    /*background-color: gray;*/
+    height: 100%;
+    width: 140vh;
+    display: flex;
+    align-items: center;
+}
+.employeelist_box {
+    /*background-color: aqua;*/
+    height: 80%;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ul#employeelist {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*background-color: antiquewhite;*/
+}
+ul#employeelist li {
+    list-style: none;
+    /*background-color: brown;*/
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+ul#employeelist li#employee .employeeLogo {
+    /*background-color: wheat;*/
+    height: 100%;
+    width: 10%;
+    background-image: url(/images/employeeLogo.png);
+    background-repeat: no-repeat;
+    background-size: 70%, 100%;
+}
+.employeeName, .employeeContact {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+span#employeename, span#employeecontact {
+    font-size: 40px;
+    margin-left: 20px;
+}
+.employeeResume {
+    /*background-color: rgb(125, 219, 125);*/
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span#employeeresume {
+    font-size: 40px;
+    margin-left: 20px;
+    color: rgba(228,77,38,255);
+    cursor: pointer;
+}
+span#employeeresume:hover {
+    text-decoration: underline;
+}
+.pagenumber {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+span#pagenumbers {
+    /*background-color: antiquewhite;*/
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+span#OrangeTextPageNumber {
+    color: rgba(228,77,38,255);
+    text-decoration: underline;
+}
