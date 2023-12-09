@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-<title>Jumpstart Ph</title>
 
 <head>
+    <title>Jumpstart Ph</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/myscripts.js"></script>
     <style>
         .companylistings_containter {
-            /*background-color: bisque;*/
             width: 100%;
             padding-top: 2%;
         }
+
         .companylistings_header {
-            /*background-color: whitesmoke;*/
             height: 100px;
             width: 100%;
             display: flex;
@@ -20,11 +19,12 @@
             padding-left: 8%;
             padding-bottom: 2%;
         }
+
         span#companyListings_headerText {
             font-size: xx-large;
             font-weight: bolder;
             color: white;
-            background-color: rgba(228,77,38,255);
+            background-color: rgba(228, 77, 38, 255);
             border-radius: 10px;
             height: 50px;
             width: 450px;
@@ -33,11 +33,12 @@
             padding-top: 5px;
             text-align: center;
         }
+
         .company_listings {
-            /*background-color: aquamarine;*/
             height: 610px;
             width: 100%;
         }
+
         ul#company_list {
             margin: 0;
             padding-left: 7%;
@@ -45,39 +46,51 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
+
         ul#company_list li {
             list-style: none;
             margin-right: 50px;
             margin-bottom: 50px;
         }
+
         ul#company_list li#company {
-            /*background-color: gray;*/
             background-image: url(/images/stretchedBoxDesign.png);
             background-size: 100%, 100%;
             height: 160px;
             width: 350px;
             border-radius: 40px;
             background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            transition: height 0.3s ease;
         }
+
         .companyheader_container {
-            /*background-color: aqua;*/
             height: 80%;
             display: flex;
             flex-direction: row;
             padding-top: 15px;
+            overflow: hidden;
+            position: relative;
+            transition: background-color 0.3s ease;
+            /*background-color: beige;*/
         }
+
         .CompanyList_companylogo {
-            background-color: green;
-            height: 100px;
+            /*background-color: green;*/
+            height: 120px;
             width: 27%;
             background-size: 100%, 100%;
             background-repeat: no-repeat;
             margin-left: 25px;
             margin-top: 20px;
         }
+
         .CompanyList_companyName {
-            background-color: gray;
-            height: 100px;
+            /*background-color: gray;*/
+            height: 120px;
             width: 45%;
             font-size: 30px;
             font-weight: bold;
@@ -86,41 +99,42 @@
             color: white;
             padding-top: 50px;
             padding-left: 10px;
+            margin: 0;
+            z-index: 2;
+            transition: margin 0.3s ease;
         }
-        /* Add this style to create a hover effect for company items */
-        ul#company_list li#company:hover {
-            height: 400px; /* Set the height to 300px on hover */
-            transition: height 0.3s ease; /* Add a smooth transition effect */
+        #riverside {
+            padding-top: 30px;
+            font-size: 25px;
         }
-
-        /* Add this style to display details on hover */
-        ul#company_list li#company:hover .companyheader_container {
-            background-color: rgba(53,66,74,255); /* Semi-transparent background */
-            border-radius: 20px;
-        }
-
-        /* Add this style to hide details by default */
-        .companyheader_container {
-            background-color: rgba(53, 66, 74, 0); /* Transparent background */
-            transition: background-color 0.3s ease; /* Add a smooth transition effect */
-        }
-
-        /* Add this style to make text/details visible on hover */
-        .companyheader_container:hover {
-            background-color: rgba(53, 66, 74, 0.8); /* Semi-transparent background */
-        }
-
-        /* Add this style to hide the text/details by default */
         .companyheader_details {
-            display: none;
             color: white;
-            padding: 10px;
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
             text-align: center;
+            transition: height 0.3s ease;
+            /*background-color: aqua;*/
         }
 
-        /* Add this style to make the text/details visible on hover */
-        .companyheader_container:hover .companyheader_details {
-            display: block;
+        ul#company_list li#company:hover {
+            height: 300px;
+            transition: height 0.3s ease;
+        }
+
+        ul#company_list li#company:hover .companyheader_container {
+            background-color:  rgba(53,66,74,255);
+            /*background-color: beige;*/
+            transition: background-color 0.3s ease;
+            border-radius: 25px;
+        }
+
+        ul#company_list li#company:hover .companyheader_details {
+            height: 100px;
+            transition: height 0.3s ease;
         }
     </style>
 </head>
@@ -198,60 +212,92 @@
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company1"></div>
                                 <div class="CompanyList_companyName">Engineering Inc.</div>
+                                <div class="companyheader_details">
+                                    <p> A cutting edge company for Engineers <br><br>
+                                        Address &nbsp; Contact
+                                    </p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company2"></div>
                                 <div class="CompanyList_companyName">Epta Tech</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company3"></div>
-                                <div class="CompanyList_companyName">Riverside International School</div>
+                                <div class="CompanyList_companyName" id="riverside">Riverside International School</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company4"></div>
                                 <div class="CompanyList_companyName">Graphica</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company5"></div>
                                 <div class="CompanyList_companyName">Aurora Inc.</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company6"></div>
                                 <div class="CompanyList_companyName">Discophage</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company7"></div>
                                 <div class="CompanyList_companyName">Darma Co.</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company8"></div>
                                 <div class="CompanyList_companyName">Phaloma Inc.</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company9"></div>
                                 <div class="CompanyList_companyName">Sky Not</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                         <li id="company">
                             <div class="companyheader_container">
                                 <div class="CompanyList_companylogo" id="company10"></div>
                                 <div class="CompanyList_companyName">Wikipod</div>
+                                <div class="companyheader_details">
+                                    <p>Additional information about Engineering Inc.</p>
+                                </div>
                             </div>
                         </li>
                     </ul>
