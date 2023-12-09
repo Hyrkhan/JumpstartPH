@@ -67,8 +67,8 @@
             padding-top: 15px;
         }
         .CompanyList_companylogo {
-            /*background-color: green;*/
-            height: 100%;
+            background-color: green;
+            height: 100px;
             width: 27%;
             background-size: 100%, 100%;
             background-repeat: no-repeat;
@@ -76,16 +76,51 @@
             margin-top: 20px;
         }
         .CompanyList_companyName {
-            /*background-color: gray;*/
-            height: 90%;
+            background-color: gray;
+            height: 100px;
             width: 45%;
             font-size: 30px;
             font-weight: bold;
             display: flex;
-            align-items: center;
+            align-items: top;
             color: white;
-            padding-top: 5px;
+            padding-top: 50px;
             padding-left: 10px;
+        }
+        /* Add this style to create a hover effect for company items */
+        ul#company_list li#company:hover {
+            height: 400px; /* Set the height to 300px on hover */
+            transition: height 0.3s ease; /* Add a smooth transition effect */
+        }
+
+        /* Add this style to display details on hover */
+        ul#company_list li#company:hover .companyheader_container {
+            background-color: rgba(53,66,74,255); /* Semi-transparent background */
+            border-radius: 20px;
+        }
+
+        /* Add this style to hide details by default */
+        .companyheader_container {
+            background-color: rgba(53, 66, 74, 0); /* Transparent background */
+            transition: background-color 0.3s ease; /* Add a smooth transition effect */
+        }
+
+        /* Add this style to make text/details visible on hover */
+        .companyheader_container:hover {
+            background-color: rgba(53, 66, 74, 0.8); /* Semi-transparent background */
+        }
+
+        /* Add this style to hide the text/details by default */
+        .companyheader_details {
+            display: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Add this style to make the text/details visible on hover */
+        .companyheader_container:hover .companyheader_details {
+            display: block;
         }
     </style>
 </head>
