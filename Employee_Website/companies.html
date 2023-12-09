@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="/style.css">
     <script src="/myscripts.js"></script>
     <style>
-        .appliedlistings_containter {
+        .companylistings_containter {
             /*background-color: bisque;*/
             width: 100%;
             padding-top: 2%;
         }
-        .appliedlistings_header {
+        .companylistings_header {
             /*background-color: whitesmoke;*/
             height: 100px;
             width: 100%;
@@ -43,19 +43,49 @@
             padding-left: 7%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
         }
         ul#company_list li {
             list-style: none;
-            margin-right: 70px;
+            margin-right: 50px;
+            margin-bottom: 50px;
         }
         ul#company_list li#company {
             /*background-color: gray;*/
             background-image: url(/images/stretchedBoxDesign.png);
             background-size: 100%, 100%;
             height: 160px;
-            width: 400px;
+            width: 350px;
             border-radius: 40px;
             background-repeat: no-repeat;
+        }
+        .companyheader_container {
+            /*background-color: aqua;*/
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            padding-top: 15px;
+        }
+        .CompanyList_companylogo {
+            /*background-color: green;*/
+            height: 100%;
+            width: 27%;
+            background-size: 100%, 100%;
+            background-repeat: no-repeat;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+        .CompanyList_companyName {
+            /*background-color: gray;*/
+            height: 90%;
+            width: 45%;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-top: 5px;
+            padding-left: 10px;
         }
     </style>
 </head>
@@ -122,17 +152,73 @@
         </div>
 
         <div class="middle-content-index">
-            <div class="appliedlistings_containter">
-                <div class="appliedlistings_header">
+            <div class="companylistings_containter">
+                <div class="companylistings_header">
                     <span id="companyListings_headerText">Companies with Job Listings:</span>
                 </div>
 
                 <div class="company_listings">
                     <ul id="company_list">
-                        <li id="company"></li>
-                        <li id="company"></li>
-                        <li id="company"></li>
-                        <li id="company"></li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company1"></div>
+                                <div class="CompanyList_companyName">Engineering Inc.</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company2"></div>
+                                <div class="CompanyList_companyName">Epta Tech</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company3"></div>
+                                <div class="CompanyList_companyName">Riverside International School</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company4"></div>
+                                <div class="CompanyList_companyName">Graphica</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company5"></div>
+                                <div class="CompanyList_companyName">Aurora Inc.</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company6"></div>
+                                <div class="CompanyList_companyName">Discophage</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company7"></div>
+                                <div class="CompanyList_companyName">Darma Co.</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company8"></div>
+                                <div class="CompanyList_companyName">Phaloma Inc.</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company9"></div>
+                                <div class="CompanyList_companyName">Sky Not</div>
+                            </div>
+                        </li>
+                        <li id="company">
+                            <div class="companyheader_container">
+                                <div class="CompanyList_companylogo" id="company10"></div>
+                                <div class="CompanyList_companyName">Wikipod</div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
