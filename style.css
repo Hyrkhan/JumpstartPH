@@ -141,7 +141,7 @@ body {
 span#OrangeText {
     color: rgba(228,77,38,255);
 }
-.registrationform {
+.registrationform, .loginform {
     /*background-color: beige;*/
     height: 85%;
     width: 76.7vh;
