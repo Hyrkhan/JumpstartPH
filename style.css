@@ -1266,3 +1266,67 @@ span#OrangeTextPageNumber {
     color: rgba(228,77,38,255);
     text-decoration: underline;
 }
+/* Employer Settings*/
+
+.logobox2 {
+    background-image: url(/images/torres.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: orchid;*/
+    height: 350px;
+    width: 350px;
+}
+
+/* Login Page*/
+
+.loginform {
+    /*background-color: beige;*/
+    height: 85%;
+    width: 76.7vh;
+    margin-top: 2px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(/images/loginboxDesign.png);
+    background-size: 15%;
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
+}
+.loginform form {
+    /*background-color: aquamarine;*/
+    height: 90%;
+    width: 95%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 50px;
+}
+.loginform form input[type="text"], .loginform form input[type="password"] {
+    height: 5vh;
+    width: 50vh;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.loginform form input[type="submit"] {
+    background-color: rgba(228,77,38,255);
+    height: 80px;
+    margin: 5%;
+    color: white;
+    font-size: xx-large;
+}
+.loginform form input[type="submit"]:hover {
+    text-decoration: underline;
+}
+.picture3 {
+    height: 90%;
+    width: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/loginPict.png);
+    background-size: 90% 90%;
+}
