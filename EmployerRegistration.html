@@ -64,25 +64,47 @@
 
             <div class="registerandpic-middle-content">
 
-                <div class="registrationform-box">
+                <div class="registrationform2-box">
 
-                    <div class="formbox-topdesign">
+                    <div class="formbox2-topdesign">
                         <div class="register-text">
                             <span id="OrangeText">R</span>egister as an Employer
                         </div>
                     </div>
 
-                    <div class="registrationform">
+                    <div class="registrationform2">
 
-                        <form  action="EmployerRegistration2.html" onsubmit="return validateForm(event)">
-                            <label for="email">Email Address:</label>
-                            <span id="formremindertext">Verification will be required to post a job listing</span>
-                            <input type="text" id="email" name="email" placeholder="emailaddress@gmail.com" required>
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" placeholder="*********" required>
-                            <label for="confirmpassword">Confirm Password:</label>
-                            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="*********" required>
-                            <input type="submit" value="NEXT">
+                        <form  action="" onsubmit="return validateForm(event)">
+                            <div class="formleft">
+                                <label for="email">Email Address:</label>
+                                <span id="formremindertext">Verification will be required to post a job listing</span>
+                                <input type="text" id="email" name="email" placeholder="emailaddress@gmail.com" required>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="*********" required>
+                                <label for="confirmpassword">Confirm Password:</label>
+                                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="*********" required>
+                            </div>
+
+                            <div class="formright">
+                                <label for="business">Business Name:</label>
+                                <span id="formremindertext">For security purposes, please enter business name</span>
+                                <input type="text" id="business" name="business" placeholder="Alorica" required><br>
+                                <label for="phonenumber">Phone Number:</label>
+                                <input type="text" id="phonenumber" name="phonenumber" placeholder="0922-332-1515" required>
+                                <div class="checkbox-policy">
+                                    <input type="checkbox" id="policy" name="policy" required>
+                                    <span id="formremindertext2">something something accept privacy policy</span><br>
+                                </div>
+                                <input type="submit" value="NEXT">
+                                <div class="employerRegtext">
+                                    Are you an Employee? 
+                                    <span id="employerRegLink">
+                                        <a href="EmployeeRegistration.html" id="employerReg">
+                                            click here
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
                         </form> 
 
                     </div>
@@ -114,11 +136,6 @@
                         </div>
                     </div>
                     <div id="modalContent2">
-                    </div>
-                </div>
-
-                <div class="picture-box">
-                    <div class="picture2">
                     </div>
                 </div>
 
