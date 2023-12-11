@@ -1392,11 +1392,14 @@ span#OrangeTextPageNumber {
 .loginform form input[type="submit"]:hover {
     text-decoration: underline;
 }
-.picture3 {
+.picture3, .picture4 {
     height: 90%;
     width: 75vh;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(/images/loginPict.png);
     background-size: 90% 90%;
+}
+.picture4 {
+    background-image: url(/images/employerReg.png);
 }
